@@ -22,8 +22,16 @@ function App() {
       {!showChat ? (
         <div className="joinChatContainer">
           <h3>Join A Chat</h3>
-          <input type="text" placeholder="...Jojo" onChange={(e) => setUserName(e.target.value)} />
-          <input type="text" placeholder="Room ID" onChange={(e) => setRoom(e.target.value)} />
+          <input
+            type="text"
+            placeholder="...Jojo"
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Room ID"
+            onChange={(e) => setRoom(e.target.value)}
+          />
           <button onClick={joinRoom}>Join Room</button>
         </div>
       ) : (
